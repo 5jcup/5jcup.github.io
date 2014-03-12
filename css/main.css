@@ -41,23 +41,29 @@
   box-shadow: 0 1px 2px #ffffff, 0 -1px 2px rgba(0, 0, 0, 0.5);
 }
 
-#sponsors-platinum .thumbnail > img{
+#sponsors-platinum .thumbnail > img,
+#sponsors-platinum .thumbnail > .no-logo
+{
     width: 200px;
     height: 200px;
 }
-#sponsors-gold .thumbnail > img{
+#sponsors-gold .thumbnail > img,
+#sponsors-gold .thumbnail > .no-logo {
     width: 150px;
     height: 150px;
 }
-#sponsors-silver .thumbnail > img{
+#sponsors-silver .thumbnail > img,
+#sponsors-silver .thumbnail > .no-logo {
     width: 120px;
     height: 120px;
 }
-#sponsors-support .thumbnail > img{
+#sponsors-support .thumbnail > img,
+#sponsors-support .thumbnail > .no-logo {
     width: 120px;
     height: 120px;
 }
-#sponsors-media .thumbnail > img{
+#sponsors-media .thumbnail > img,
+#sponsors-media .thumbnail > .no-logo {
     width: 120px;
     height: 120px;
 }
