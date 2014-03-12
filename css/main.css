@@ -3,7 +3,12 @@ body {
   line-height: 1.6em;
 }
 
-h1, h2, h3 {
+h1 {
+  margin-top: 80px;
+  text-align: center;
+}
+
+h2, h3 {
 margin-top: 2.5em;
 margin-bottom: 1em;
 font-weight: bold;
@@ -103,23 +108,53 @@ dl dd {
   box-shadow: 0 1px 2px #ffffff, 0 -1px 2px rgba(0, 0, 0, 0.05);
 }
 
-#sponsors-platinum .thumbnail > img{
+<<<<<<< HEAD
+
+
+.snsBox {
+padding: 5px 5px 5px 5px;
+margin-left: -1px;
+bottom: 10px;
+position: fixed;
+background:rgba(237,237,237,0.4);
+border: 1px solid #efefef;
+}
+
+.snsBox .snsList {
+  list-style-type: none;
+}
+
+
+.snsBox .snsList li {
+  display: inline-block;
+}
+
+
+=======
+>>>>>>> FETCH_HEAD
+#sponsors-platinum .thumbnail > img,
+#sponsors-platinum .thumbnail > .no-logo
+{
     width: 200px;
     height: 200px;
 }
-#sponsors-gold .thumbnail > img{
+#sponsors-gold .thumbnail > img,
+#sponsors-gold .thumbnail > .no-logo {
     width: 150px;
     height: 150px;
 }
-#sponsors-silver .thumbnail > img{
+#sponsors-silver .thumbnail > img,
+#sponsors-silver .thumbnail > .no-logo {
     width: 120px;
     height: 120px;
 }
-#sponsors-support .thumbnail > img{
+#sponsors-support .thumbnail > img,
+#sponsors-support .thumbnail > .no-logo {
     width: 120px;
     height: 120px;
 }
-#sponsors-media .thumbnail > img{
+#sponsors-media .thumbnail > img,
+#sponsors-media .thumbnail > .no-logo {
     width: 120px;
     height: 120px;
 }
@@ -132,8 +167,15 @@ footer {
 }
 
 @media (max-width: 960px){
+  h1 {
+    margin-top: 50px;
+  }
 .staff li .staff-info {
   width: 100%;
   }
+ img {
+  width: 100%;
+  }
+ } 
 }
 
