@@ -8,15 +8,40 @@ h1 {
   text-align: center;
 }
 
+
+
 h2, h3 {
-margin-top: 2.5em;
-margin-bottom: 1em;
-font-weight: bold;
+   text-align: center;
+  margin-top: 2.5em;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+#sponsors h3 {
+   text-align: left;
 }
 
 
 p {
 margin: 0 0 1.7em;
+}
+
+.comming {
+  font-size: 35px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.volunteer {
+  text-align: center;
+  font-size: 18px;
+}
+
+.volunteer a{
+  text-align: center;
+  color: #FF5224;
 }
 
 dl {
@@ -87,8 +112,8 @@ dl dd {
   width: 130px;
 }
 .staff li .staff-info {
-  padding-left: 130px;
-  padding-right: 10px;
+  padding-left:130px;
+  padding-right:10px;
   width: 100%;
 }
 .staff li .staff-info .staff-name {
@@ -109,22 +134,24 @@ dl dd {
 }
 
 .snsBox {
-padding: 5px 5px 5px 5px;
-margin-left: -1px;
-bottom: 10px;
-position: fixed;
-background:rgba(237,237,237,0.4);
-border: 1px solid #efefef;
+  padding: 5px 5px 5px 5px;
+  top: 0px;
+  right:0px;
+  position: fixed;
+  background:rgba(237,237,237,0.2);
+  border: 1px solid #efefef;
 }
 
 .snsBox .snsList {
   list-style-type: none;
+  padding-left: 10px;
+  padding-right: 20px;
 }
 
 
-.snsBox .snsList li {
+/* .snsBox .snsList li {
   display: inline-block;
-}
+} */
 
 #sponsors-platinum .thumbnail > img,
 #sponsors-platinum .thumbnail > .no-logo
