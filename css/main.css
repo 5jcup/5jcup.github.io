@@ -108,9 +108,6 @@ dl dd {
   box-shadow: 0 1px 2px #ffffff, 0 -1px 2px rgba(0, 0, 0, 0.05);
 }
 
-<<<<<<< HEAD
-
-
 .snsBox {
 padding: 5px 5px 5px 5px;
 margin-left: -1px;
@@ -129,9 +126,6 @@ border: 1px solid #efefef;
   display: inline-block;
 }
 
-
-=======
->>>>>>> FETCH_HEAD
 #sponsors-platinum .thumbnail > img,
 #sponsors-platinum .thumbnail > .no-logo
 {
