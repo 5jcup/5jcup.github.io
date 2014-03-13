@@ -138,8 +138,8 @@ dl dd {
   top: 0px;
   right:0px;
   position: fixed;
-  background:rgba(237,237,237,0.2);
-  border: 1px solid #efefef;
+  /* background:rgba(237,237,237,0.2);
+  border: 1px solid #efefef; */
 }
 
 .snsBox .snsList {
@@ -149,9 +149,9 @@ dl dd {
 }
 
 
-/* .snsBox .snsList li {
-  display: inline-block;
-} */
+.snsBox .snsList li {
+  margin-bottom: 15px;
+} 
 
 #sponsors-platinum .thumbnail > img,
 #sponsors-platinum .thumbnail > .no-logo
