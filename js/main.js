@@ -1,3 +1,4 @@
+
 $(function() {
     $('.sponsor-list').each(function() {
         var listItems = $(this).children('li').detach();
@@ -13,4 +14,13 @@ $(function() {
         }
     }).css('display', 'block');
 
+    $('#cover-image').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
+        if (window.matchMedia( "(min-width: 769px)" ).matches) {
+            if (isInView) {
+                $('#site-logo').hide(500);
+            } else {
+                $('#site-logo').show(500);
+            }
+        }
+    });
 });

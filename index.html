@@ -22,50 +22,40 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/main.css">
-
+    <script src="js/3rdparty.js"></script>
     <!--[if lt IE 9]>
         <script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
         <![endif]-->
-
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script>
+      <!--
+          window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')
+        -->
+    </script>
+    <script src="js/vendor/jquery.inview.min.js"></script>
   </head>
   <body>
     <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=528701107217800";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-
-  <aside class="snsBox">
-    <ul class="snsList">
-      <li> <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://5jcup.org/" data-via="Nori_endeNeu" data-hashtags="html5j">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-      </li>
-      <li> <a href="https://twitter.com/html5j" class="twitter-follow-button" data-show-count="false" data-lang="ja">@html5jさんをフォロー</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
-      <li>
-        <div class="fb-like" data-href="http://5jcup.org/" data-width="100px" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
-      </li>
-    <li><div class="g-plusone" data-annotation="none"></div>
-        <script type="text/javascript">
-   window.___gcfg = {lang: 'ja'};
-
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/platform.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-  })();
-  </script>
-      </li>
- </ul>
- </aside>
+    <aside class="snsBox">
+      <div class="container">
+        <img id="site-logo" src="img/etc/html5JC_logo2.png" alt="HTML5 Japan Cup 2014"></h1>
+        <ul class="snsList">
+          <li id="twitter-follow-button"> <a href="https://twitter.com/html5j" class="twitter-follow-button" data-show-count="false" data-lang="ja">@html5jさんをフォロー</a>
+          </li>
+          <li> <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://5jcup.org/" data-via="html5j" data-hashtags="html5j">Tweet</a>
+          </li>
+          <li>
+            <div class="fb-like" data-href="http://5jcup.org/" data-width="100px" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+          </li>
+          <li id="plus1button"><div class="g-plusone" data-annotation="none"></div>
+          </li>
+        </ul>
+      </div>
+    </aside>
 
     <div class="container">
       <header>
-        <h1><img src="img/etc/html5JC_logo2.png"></h1>
+        <h1><img id="cover-image" src="img/etc/html5JC_logo2.png" alt="HTML5 Japan Cup 2014"></h1>
         <p class="tac">
           <a href="https://docs.google.com/forms/d/1RuDemZr1HjJptl9QjI8tDtXFIqMn0ldtnwAUXeSBq48/viewform" class="btn btn-more" target="_blank">ボランティアスタッフ大募集！（3月27日まで）</a>
         </p>
@@ -90,54 +80,66 @@
             </dd>
           </dl>
         </section>
-        <section>
-          <h2>「HTML5 Japan Cup」とは</h2>
-          <p>
-            HTML5 Japan Cup（5jCup）。それはデザイナー、エンジニアなんて呼ばれる私たち自身が作る、私たちのためのクリエイティブ・アワード（コンテスト）です。<br>
-          </p>
-          <section>
-            <h3>超豪華なスポンサー陣が様々な賞を提供！</h3>
-            <p>
-              <a href="#sponsors">超豪華なスポンサー陣</a>が設定した、以下の様な賞を目指して、作品を応募してください。複数の賞を同時に受賞することもできるので、賞の総ざらいも夢じゃない！
-            </p>
-            <ul>
-              <li>テーマ賞・・・スポンサーが提供するテーマに沿ったアプリ／サイトを作ってください。テーマごとに、企業・団体色豊かな素材（画像やデータなど）も利用可能！</li>
-              <li>プラットフォーム賞・・・作品が動作するプラットフォームごとに、賞を獲得できるチャンス！複数のプラットフォームで動作するようなアプリ／サイトを作れば、それだけで受賞の確率を高められます。</li>
-              <li>ライブラリ・API・ツール賞・・・スポンサーが提供するライブラリやAPI、ツールを使用して、アプリ／サイトを作ってください。</li>
-              <li>その他特別賞・・・上記の他にも、ユニークな賞がてんこ盛り！</li>
-            </ul>
-          </section>
-          <section>
-            <h3>イベントも充実！5jCupが、日本のWebを熱くする！</h3>
-            <p>
-              二ヶ月の作品応募期間中、アワードを盛り上げる様々なイベントが盛りだくさん！5jCupと連動して、様々なハッカソンやセミナーが開催される予定です。脇を固める<a href="#sponsors-media" target="_blank">メディアスポンサー</a>も充実！
-            </p>
-            <p>
-              2014年前半、日本全国のWebデザイナー／エンジニアを熱くする。それがHTML5 Japan Cupの使命です。<br>
-              そしてそれはきっと、「世界」に繋がる道。日本はきっとそのうち、世界のWebシーンをリードする存在になる。そう信じるから、「World Cup」を連想させる「Japan Cup」という名前を付けました。
-            </p>
-            <p>
-              誰もが楽しめて、熱くなれて、創造力を限界まで発揮できる。そんなアワードを、私たちと一緒に作っていきましょう！
-            </p>
-          </section>
-        </section>
-        <section id="volunteer">
-          <h2>ボランティアスタッフ、大募集！</h2>
-          <p>
-            5jCupを楽しむ方法は、作品を応募したりイベントに参加することだけではありません。ボランティアスタッフになって、5jCupを「作る」側に回ることもできます。<br>
-            コミュニティ活動は、色んな体験に出会えるチャンスが盛りだくさん。意外と、人生変わっちゃうかも知れませんよ？:-)
-          </p>
-          <p>
-            自分のスキルで役に立てるか不安、という方も心配いりません。HTML5 Japan Cupでは、イベントの取材、イベントスタッフ、ブログやソーシャルメディアでの盛り上げなど、たくさんの「やること」「やれること」が待っています。<br>
-あなたが今できることだけじゃなく、昔やっていたことや、これから身につけたいことまで、きっと何でも5jCupの役に立てていただけます。
-          </p>
-          <p>
-            ボランティアの募集期間は<strong>3月27日</strong>まで！このアワードを素晴らしいものにするためにも、あなたの力を貸してください！
-          </p>
-          <p class="tac">
-            <a href="https://docs.google.com/forms/d/1RuDemZr1HjJptl9QjI8tDtXFIqMn0ldtnwAUXeSBq48/viewform" class="btn btn-more" target="_blank">ボランティア募集についてもっと詳しく&nbsp;</a>
-          </p>
-        </section>
+        <div id="content-middle" class="clearfix">
+          <div id="content-middle-left">
+            <section>
+              <h2>「HTML5 Japan Cup」とは</h2>
+              <p>
+                HTML5 Japan Cup（5jCup）。それはデザイナー、エンジニアなんて呼ばれる私たち自身が作る、私たちのためのクリエイティブ・アワード（コンテスト）です。<br>
+              </p>
+              <section>
+                <h3>超豪華なスポンサー陣が様々な賞を提供！</h3>
+                <p>
+                  <a href="#sponsors">超豪華なスポンサー陣</a>が設定した、以下の様な賞を目指して、作品を応募してください。複数の賞を同時に受賞することもできるので、賞の総ざらいも夢じゃない！
+                </p>
+                <ul>
+                  <li>テーマ賞・・・スポンサーが提供するテーマに沿ったアプリ／サイトを作ってください。テーマごとに、企業・団体色豊かな素材（画像やデータなど）も利用可能！</li>
+                  <li>プラットフォーム賞・・・作品が動作するプラットフォームごとに、賞を獲得できるチャンス！複数のプラットフォームで動作するようなアプリ／サイトを作れば、それだけで受賞の確率を高められます。</li>
+                  <li>ライブラリ・API・ツール賞・・・スポンサーが提供するライブラリやAPI、ツールを使用して、アプリ／サイトを作ってください。</li>
+                  <li>その他特別賞・・・上記の他にも、ユニークな賞がてんこ盛り！</li>
+                </ul>
+              </section>
+              <section>
+                <h3>イベントも充実！5jCupが、日本のWebを熱くする！</h3>
+                <p>
+                  二ヶ月の作品応募期間中、アワードを盛り上げる様々なイベントが盛りだくさん！5jCupと連動して、様々なハッカソンやセミナーが開催される予定です。脇を固める<a href="#sponsors-media" target="_blank">メディアスポンサー</a>も充実！
+                </p>
+                <p>
+                  2014年前半、日本全国のWebデザイナー／エンジニアを熱くする。それがHTML5 Japan Cupの使命です。<br>
+                  そしてそれはきっと、「世界」に繋がる道。日本はきっとそのうち、世界のWebシーンをリードする存在になる。そう信じるから、「World Cup」を連想させる「Japan Cup」という名前を付けました。
+                </p>
+                <p>
+                  誰もが楽しめて、熱くなれて、創造力を限界まで発揮できる。そんなアワードを、私たちと一緒に作っていきましょう！
+                </p>
+              </section>
+            </section>
+            <section id="volunteer">
+              <h2>ボランティアスタッフ、大募集！</h2>
+              <p>
+                5jCupを楽しむ方法は、作品を応募したりイベントに参加することだけではありません。ボランティアスタッフになって、5jCupを「作る」側に回ることもできます。<br>
+                コミュニティ活動は、色んな体験に出会えるチャンスが盛りだくさん。意外と、人生変わっちゃうかも知れませんよ？:-)
+              </p>
+              <p>
+                自分のスキルで役に立てるか不安、という方も心配いりません。HTML5 Japan Cupでは、イベントの取材、イベントスタッフ、ブログやソーシャルメディアでの盛り上げなど、たくさんの「やること」「やれること」が待っています。<br>
+                あなたが今できることだけじゃなく、昔やっていたことや、これから身につけたいことまで、きっと何でも5jCupの役に立てていただけます。
+              </p>
+              <p>
+                ボランティアの募集期間は<strong>3月27日</strong>まで！このアワードを素晴らしいものにするためにも、あなたの力を貸してください！
+              </p>
+              <p class="tac">
+                <a href="https://docs.google.com/forms/d/1RuDemZr1HjJptl9QjI8tDtXFIqMn0ldtnwAUXeSBq48/viewform" class="btn btn-more" target="_blank">ボランティア募集についてもっと詳しく&nbsp;</a>
+              </p>
+            </section>
+          </div>
+          <div id="content-middle-right">
+            <aside>
+              <div class="fb-like-box" data-href="https://www.facebook.com/html5j" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true" data-width="200px"></div>
+              <div id="twitter-timeline-right">
+              <a class="twitter-timeline" href="https://twitter.com/search?q=%235jcup" data-widget-id="444047013080875008">#5jcup に関するツイート</a>
+              </div>
+            </aside>
+          </div>
+        </div>
         <section id="sponsors">
           <h2>協賛企業・後援団体</h2>
           <p>
@@ -224,9 +226,9 @@
               <li><a class="thumbnail sponsor" id="sp-html5j-beginners" data-sponsorid="html5j-beginners" target="_blank" href="http://html5j-begin.blogspot.jp/"><img src="img/sponsors/html5j-beginners/html5j-beginners.png" alt="HTML5ビギナーズ"></a></li>
               <li><a class="thumbnail sponsor" id="sp-html5j-enterprise" data-sponsorid="html5j-enterprise" target="_blank" href=""><img src="img/sponsors/html5j-enterprise/html5j-enterprise.png" alt="html5j エンタープライズ"></a></li>
               <li><span class="thumbnail sponsor" id="sp-html5j-automotive" data-sponsorid="html5j-automotive" target="_blank" href=""><img src="img/sponsors/html5j-automotive/html5j-automotive_200w.png" alt="html5j 自動車部"></span></li>
-<!--
-              <li><a class="thumbnail sponsor" id="sp-html5j-enterprise" data-sponsorid="html5j-enterprise" target="_blank" href=""><div class="no-logo">html5j<br>エンタメ技術部</div></a></li>
--->
+              <!--
+                  <li><a class="thumbnail sponsor" id="sp-html5j-enterprise" data-sponsorid="html5j-enterprise" target="_blank" href=""><div class="no-logo">html5j<br>エンタメ技術部</div></a></li>
+                  -->
               <li><span class="thumbnail sponsor" id="sp-html5j-webplatform" data-sponsorid="html5j-webplatform" target="_blank" href=""><img src="img/sponsors/html5j-webplatform/html5j-webplatform_200w.png" alt="html5j Webプラットフォーム部"></span></li>
               <li><a class="thumbnail sponsor" id="sp-html5j-tohoku" data-sponsorid="html5j-tohoku" target="_blank" href="http://html5j-tohoku.org/"><img src="img/sponsors/html5j-tohoku/html5j-tohoku.jpg" alt="html5j-tohoku"></a></li>
             </ul>
@@ -256,103 +258,12 @@
             </ul>
           </section>
         </section>
-        <!-- section class="staff">
-          <h2>（現時点での）スタッフ一覧</h2>
-          <ul>
-            <li>
-              <div class="staff-logo-wrapper">
-                <img src="img/staff/shiraishi.png" class="staff-logo" alt="白石 俊平">
-              </div>
-              <div class="staff-info">
-                <div class="staff-name">白石 俊平（しらいし しゅんぺい）</div>
-                <div class="staff-role">総合プロデューサー</div>
-                <div class="staff-description">
-                  <p><a href="http://html5j.org">html5j</a>管理人、<a href="http://openweb.co.jp">株式会社オープンウェブ・テクノロジー</a>代表取締役、「<a href="http://kakkoii.tv">(白石俊平と) カッコいいやつら</a>」プロデューサー、<a href="http://www.bookbookbook.jp">読書するエンジニアの会</a>主催、などなど。</p>
-                  <a href="https://twitter.com/Shumpei" class="twitter-follow-button" data-show-count="false" data-lang="ja" data-show-screen-name="false">@Shumpeiさんをフォロー</a>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="staff-logo-wrapper">
-                <img src="img/staff/yoshikawa.jpg" class="staff-logo" alt="吉川 徹">
-              </div>
-              <div class="staff-info">
-                <div class="staff-name">吉川 徹（よしかわ とおる）</div>
-                <div class="staff-role"></div>
-                <div class="staff-description">
-                  <p>フリーランスのWebエンジニアとして活動中。html5jのスタッフとして、HTML5の最新動向を追うとともにHTML5の普及促進に務める。また、Google Developer Expert（Chrome）として、Chrome関連の情報発信も行なっている。その他、Webに関する講演や記事執筆、jQuery Mobile担当講師（allWebクリエイター塾）など。著書に「jQuery Mobileパーフェクトガイド」と「HTML5ガイドブック増補改訂版」がある。</p>
-                  <a href="https://twitter.com/yoshikawa_t" class="twitter-follow-button" data-show-count="false" data-lang="ja" data-show-screen-name="false">@yoshikawa_tさんをフォロー</a>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="staff-logo-wrapper">
-                <img class="staff-logo" src="img/staff/kubota.jpg" alt="窪田 則子">
-              </div>
-              <div class="staff-info">
-                <div class="staff-name">窪田 則子（くぼた のりこ）</div>
-                <div class="staff-role">アートディレクター</div>
-                <div class="staff-description">
-                  <p>
-                    WEB・スマホアプリデザイナー、イラストレーター。多摩美術大学美術学部デザイン科卒業。企業にて商品企画・開発・デザイン制作を担当後、企業勤務・フリーにてコーポレートサイト、新聞社サイト、スマホアプリ、e-ラーニング、イラスト制作等々携わる。毎年NYでグループ展参加等活動中。　<a href="http://endeneu.jp" target="_blank">studio endeNeu</a>主催
-                  </p>
-                  <a target="_blank" href="https://www.facebook.com/noriko.kubota"><img src="img/etc/facebookMark2.png"></a>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </section -->
       </main>
-
-
-
-
-
-
-    </div> 
-
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=219964854860418";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
+      <footer>
+        <p>&copy; html5j 2014</p>
+      </footer>
     </div> <!-- /container -->
-
-    <footer>
-      <p>&copy; html5j 2014</p>
-    </footer>  
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
-
-      <script src="js/vendor/bootstrap.min.js"></script>
-      
-      <script src="js/main.js"></script>
-
-      <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-48937806-1', '5jcup.org');
-        ga('send', 'pageview');
-      </script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
