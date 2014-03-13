@@ -4,7 +4,7 @@ body {
 }
 
 h1 {
-  margin-top: 80px;
+  margin-top: 100px;
   text-align: center;
 }
 
@@ -136,21 +136,22 @@ dl dd {
 .snsBox {
   padding: 5px 5px 5px 5px;
   top: 0px;
-  right:0px;
   position: fixed;
-  /* background:rgba(237,237,237,0.2);
-  border: 1px solid #efefef; */
+ background:rgba(237,237,237,0.2);
+   /* border: 1px solid #efefef; */
+   width: 100%;
+   text-align: right;
 }
 
 .snsBox .snsList {
   list-style-type: none;
   padding-left: 10px;
-  padding-right: 20px;
+  padding-right: 10px;
 }
 
 
 .snsBox .snsList li {
-  margin-bottom: 15px;
+  display: inline-block;
 } 
 
 #sponsors-platinum .thumbnail > img,
