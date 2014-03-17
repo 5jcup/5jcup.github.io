@@ -245,3 +245,7 @@ footer {
         display: none;
     }
 }
+
+#embedded-slide {
+    text-align: center;
+}
